@@ -5,11 +5,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200923022315_Initial.cs" />
+    <Compile Remove="Migrations\20200923022315_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200923033509_AddedEntities.cs" />
+    <Compile Remove="Migrations\20200923033509_AddedEntities.Designer.cs" />
+    <Compile Remove="Migrations\20200923033757_EntitiesAdded.cs" />
+    <Compile Remove="Migrations\20200923033757_EntitiesAdded.Designer.cs" />
+    <Compile Remove="Migrations\20200923034131_EntitiesUpdated.cs" />
+    <Compile Remove="Migrations\20200923034131_EntitiesUpdated.Designer.cs" />
+    <Compile Remove="Migrations\20200923035821_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200923035821_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>
